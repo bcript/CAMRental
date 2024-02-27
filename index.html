@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <title>CameraRental</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    .navbar{
+      background-color: teal; padding-right: 500px; padding-left: 500px; height: 50px;
+    } 
+    *{
+      text-decoration: none;
+    }
+    .logo a{
+      font-weight: bold; font-size: 35px; color: orange; text-align: center;
+    }
+
+    .logo {
+      text-align: center; margin-top: -20px;
+    }
+    .a{
+      list-style: none; display: inline-block;
+    }
+    a {
+      color: white;
+    }
+    .copyrighttext {
+      padding-right: 100px;
+    }
+  </style>
+</head>
+<body>
+  <script src="index.js"></script>
+  <center><nav class="navbar">
+    <a href="#"><font-color: white>Home&nbsp;&nbsp;</a>
+    <a href="rental.html">Rental Services&nbsp;&nbsp;</a>
+    <a href="contact.html">Contact</a>
+  </nav></center>
+  <section>
+  <nav class="navbar">
+    <div class="navdiv"></div>
+      <div class="logo"><a href="#">Camera Rental Request</a></span></div>
+  </nav>
+  </section>
+  <div class="box">
+    <h2 class="tableheadercamera"><strong>Available Cameras</strong></h2>
+    <center><table>
+      <thead class="home-thead">
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Rental Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src=https://sg.canon/media/image/2021/09/11/396760f4b5bc4d67afcbc2eb0ff11638_R3_frontSlant_lens.png width=100px height=90px></td>
+          <td><strong>Canon EOS R3</strong></td>
+          <td>Best professional sports camera with 24.1MP sensor</td>
+          <td>$50/day</td>
+        </tr>
+        <tr>
+          <td><img src=https://www.nikon.com.sg/media/wysiwyg/press-release/2023/2023-06-13/2-product-nikon-z9-firmware-june-2023-nikon-cameras-lenses-accessories.jpg width=105px height=75px></td>
+          <td><strong>Nikon Z9</strong></td>
+          <td>Best all-round professional camera with 45.7MP sensor</td>
+          <td>$45/day</td>
+        </tr>
+        <tr>
+          <td><img src=https://soyacincau.com/wp-content/uploads/2021/02/210202-sony-a1-launch-specs-price-too-pro-2.jpg width=110px height=100px></td>
+          <td><strong>Sony A1</strong></td>
+          <td>High-end camera with 50.1MP sensor</td>
+          <td>$60/day</td>
+        </tr>
+    </tbody>
+    </table></center>
+    <h2 id="rentcamera">Rent Camera</h2>
+    <h3><center>Select a Camera</center></h3>
+    <form>
+      <strong><center><select class="cameratypeselect" id="cameratype">
+        <option value="CanonEOSR3"><strong><center>Canon EOS R3</center></strong></option>
+        <option value="NikonZ9"><center>Nikon Z9</center></option>
+        <option value="Sony A1"><center>Sony A1</center></option>
+      </select></center>
+        <h3><center>Rental Duration (in days):</center></h3>
+        <center><input class="durationinput" type="number" id="duration" name="duration" min="1" max="30"></center>
+        <h3><center>Additional Requests:</center></h3>
+        <center><textarea id="comments" name="comments" placeholder="Enter any requests that you have. We will try to cater to your needs." class="commentsrequest" rows="5" cols="85"></textarea></center>
+        <h3><center style="margin-top: -20px;">Email:</center></h3>
+        <center><input type="email" id="email" name="email" placeholder="Key in your email address here." class="emailsubmit" required></center>
+        <form id=CameraForm>
+          <center><input type="submit" value="Submit" class="submitbutton" id="submitbutton" onclick=CheckBoxes() style="font-size: 20px; color: white; font-weight: bold;"></center>
+        </form>
+    </form>
+  </div>
+  <center><div class="copyrightbox">
+    <center><h3 style="margin-top: 4px;" class="copyrighttext">&#169; Snap Profesional Rental, Singapore</h3></center>
+    
+  </div>
+</body>
+
+</html>
